@@ -25,4 +25,8 @@ class FantasyQuiz < ActiveRecord::Base
     total_score >= 500
   end
 
+  def computed_score
+    total_score = question_two_score + question_one_score
+  end
+
 end

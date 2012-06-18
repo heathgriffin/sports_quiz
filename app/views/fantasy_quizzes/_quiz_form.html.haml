@@ -1,0 +1,30 @@
+=form_for(@fantasy_quiz) do |f|
+  %p
+    =f.label :name 
+    %br
+    =f.text_field :name
+
+  %p
+    =f.label :email
+    %br
+    =f.text_field :email
+
+  %p
+    =f.label :question_one_answer
+    %br
+    = f.text_area :question_one_answer
+  %p
+    =f.label :question_one_score
+    %br
+    =f.text_field :question_one_score
+  %p
+    =f.label :question_two_answer
+    %br
+    =f.text_area :question_two_answer
+  %p
+    =f.label :question_two_score
+    %br
+    =f.text_field :question_two_score
+  %p
+    =f.submit
+    =link_to "Cancel", @fantasy_quiz
