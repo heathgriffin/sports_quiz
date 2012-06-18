@@ -6,7 +6,7 @@
     %p=@fantasy_quiz.question_two_answer
     %p=@fantasy_quiz.question_two_score
     %p=@fantasy_quiz.computed_score
-    / %p=format_total_score(@fantasy_quiz)
+    %p=format_total_score(@fantasy_quiz)
     %p=link_to "Quiz Results", root_path
     %p=link_to "Edit this entry", edit_fantasy_quiz_path(@fantasy_quiz)
     %p=link_to "Delete this entry", fantasy_quiz_path(@fantasy_quiz), method: 'delete', confirm: "Do you really want to delete #{@fantasy_quiz.name}'s entry?"

@@ -10,9 +10,21 @@
     =f.text_field :email
 
   %p
+    Question 1
+    %br
+    =f.radio_button(:question_one_answer, "JJ Redick")
+    =f.label(:JJ_Redick, "JJ Redick")
+    =f.radio_button(:question_one_answer, "Ryan Anderson")
+    =f.label(:Ryan_Anderson, "Ryan Anderson")
+    =f.radio_button(:question_one_answer, "Jeremy Lin")
+    =f.label(:Jeremy_Lin, "Jeremy Lin")
+    =f.radio_button(:question_one_answer, "James Johnson")
+    =f.label(:James_Johnson, "James Johnson")
+    
+  %p
     =f.label :question_one_answer
     %br
-    = f.text_area :question_one_answer
+    =f.text_field :question_one_answer
   %p
     =f.label :question_one_score
     %br
@@ -20,7 +32,7 @@
   %p
     =f.label :question_two_answer
     %br
-    =f.text_area :question_two_answer
+    =f.text_field :question_two_answer
   %p
     =f.label :question_two_score
     %br
