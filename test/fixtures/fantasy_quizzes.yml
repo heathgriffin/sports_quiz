@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  email: MyString
+  answers: MyText
+  score: 1
+  total_score: 1
+
+two:
+  name: MyString
+  email: MyString
+  answers: MyText
+  score: 1
+  total_score: 1

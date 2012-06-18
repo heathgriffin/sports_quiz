@@ -1,0 +1,6 @@
+.quiz_entries
+    %p=@fantasy_quizzes.name
+    %p=@fantasy_quizzes.email
+    %p=@fantasy_quizzes.total_score
+    %p=format_total_score(@fantasy_quizzes)
+    %p=link_to "Quiz Results", fantasy_quizzes_path

@@ -1,0 +1,14 @@
+.quiz_entry
+  %h1 Please enter your information to start the quiz:
+  .user_info
+    .user_name
+      / Name input goes here
+    .user_email
+      / Email input goes here
+%br
+%br
+.quiz_entries
+  %h2 Quiz Entries
+  - @fantasy_quizzes.each do |quiz|
+    %p=quiz.name
+    %p=link_to "View this entry", quiz
