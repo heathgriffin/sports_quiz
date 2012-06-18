@@ -1,6 +1,9 @@
 SportsQuiz::Application.routes.draw do
 
-  get "fantasy_quizzes" => "fantasy_quizzes#index"
-  get "fantasy_quizzes/:id" => "fantasy_quizzes#show", as: "quiz"
+resources :fantasy_quizzes
+
+root to: "fantasy_quizzes#index"
+
+get "quiz-results" => "fantasy_quizzes#index", as: "quiz_results"
 
 end

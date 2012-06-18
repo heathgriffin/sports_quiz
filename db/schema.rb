@@ -11,16 +11,28 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120617194351) do
+ActiveRecord::Schema.define(:version => 20120618062519) do
 
   create_table "fantasy_quizzes", :force => true do |t|
     t.string   "name"
     t.string   "email"
-    t.text     "answers"
-    t.integer  "score"
     t.integer  "total_score"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.datetime "created_at",            :null => false
+    t.datetime "updated_at",            :null => false
+    t.text     "question_one_answer"
+    t.text     "question_two_answer"
+    t.text     "question_three_answer"
+    t.integer  "question_one_score"
+    t.integer  "question_two_score"
+    t.integer  "question_three_score"
+  end
+
+  create_table "posts", :force => true do |t|
+    t.string   "title"
+    t.string   "author"
+    t.text     "body"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
 end
